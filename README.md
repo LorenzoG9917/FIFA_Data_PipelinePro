@@ -51,7 +51,3 @@ El proyecto incluye los siguientes archivos:
 ![BigQuery](https://github.com/LorenzoG9917/FIFA_Data_PipelinePro/assets/121797266/457514a5-0f87-45de-911a-112614b8b486)
 ## Autor
 Este proyecto ha sido desarrollado por [Lorenzo Guerrero](https://www.linkedin.com/feed/) con fines educativos.
-
----
-
-**Nota:** Este proyecto es un ejemplo educativo y puede requerir adaptaciones para su uso en un entorno de producción. Los datos utilizados aquí son ficticios y se proporcionan solo con fines de demostración.
