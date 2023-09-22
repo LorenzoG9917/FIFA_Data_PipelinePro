@@ -3,6 +3,7 @@
 ## Objetivo
 El objetivo principal de este proyecto es realizar un análisis exhaustivo de datos históricos de la Copa del Mundo de la FIFA, utilizando técnicas de ingeniería de datos y herramientas de Google Cloud Platform. Esto incluye la exploración, transformación y enriquecimiento de datos, así como su almacenamiento en BigQuery para su posterior análisis y visualización. Este proyecto simula un entorno de Data Lake con sus capas correspondientes, permitiendo una gestión eficiente de los datos.
 ## Arquitectura
+![FIFA_Data_PipelinePro](https://github.com/LorenzoG9917/FIFA_Data_PipelinePro/assets/121797266/e128c8a7-1c31-42c6-ac48-ba0c158fe70a)
 
 
 ## Descripción
@@ -30,23 +31,23 @@ El proyecto incluye los siguientes archivos:
 - **transformLoad_files.ipynb**: Un script Python que transforma los datos de la capa raw de Cloud Storage y los carga en la capa gold. Este archivo también carga datos enriquecidos a BigQuery para su análisis posterior.
 
 ## Paso a Paso
-1. Creación de Servicios: Inicie un servicio  de Cloud Storage y BigQuery en Google Cloud Platform (GCP).
-2. Bucket de Almacenamiento: Cree un bucket llamado "fifa_project" en Cloud Storage.
-3. Organización de Datos: Dentro del bucket, cree dos directorios: "raw_data" y "gold_data".
-4. Cuenta de Servicio: Cree una cuenta de servicio llamada "fifa-project" con roles específicos. 
+1. **Creación de Servicios**: Inicie un servicio  de Cloud Storage y BigQuery en Google Cloud Platform (GCP).
+2. **Bucket de Almacenamiento**: Cree un bucket llamado "fifa_project" en Cloud Storage.
+3. **Organización de Datos**: Dentro del bucket, cree dos directorios: "raw_data" y "gold_data".
+4. **Cuenta de Servicio**: Cree una cuenta de servicio llamada "fifa-project" con roles específicos. 
    - Administrador de almacenamiento en Cloud Storage (Storage Admin)
    - Administrador de objetos de Storage (Storage Object Admin)
    - Editor de datos de BigQuery (BigQuery Data Editor)
    - Usuario de BigQuery (BigQuery User)
    - Visualizador de datos de BigQuery (BigQuery Data Viewer)
 
-5. Descarga de Credenciales: Descargue un archivo JSON de credenciales para acceder a BigQuery y Cloud Storage.
-6. Configurar Credenciales en los notebooks: Especificar en los notebooks la ruta de las credenciales descargadas en el paso anterior.
+5. **Descarga de Credenciales**: Descargue un archivo JSON de credenciales para acceder a BigQuery y Cloud Storage.
+6. **Configurar Credenciales en los notebooks**: Especificar en los notebooks la ruta de las credenciales descargadas en el paso anterior.
      ```
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '[path/credentials/service-fifa-lg.json]'
      ```
-6. Ejecución de Notebooks: Utilice los notebooks "upload_files.ipynb" y "transformLoad_files.ipynb" para cargar y transformar datos.
-7. Verificación en BigQuery: Verifique visualmente la carga exitosa de datos en BigQuery.
+6. **Ejecución de Notebooks**: Utilice los notebooks "upload_files.ipynb" y "transformLoad_files.ipynb" para cargar y transformar datos.
+7. **Verificación en BigQuery**: Verifique visualmente la carga exitosa de datos en BigQuery.
 ![BigQuery](https://github.com/LorenzoG9917/FIFA_Data_PipelinePro/assets/121797266/457514a5-0f87-45de-911a-112614b8b486)
 ## Autor
 Este proyecto ha sido desarrollado por [Lorenzo Guerrero](https://www.linkedin.com/feed/) con fines educativos.
