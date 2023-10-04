@@ -50,4 +50,4 @@ El proyecto incluye los siguientes archivos:
 7. **Verificación en BigQuery**: Verifique visualmente la carga exitosa de datos en BigQuery.
 ![BigQuery](https://github.com/LorenzoG9917/FIFA_Data_PipelinePro/assets/121797266/457514a5-0f87-45de-911a-112614b8b486)
 ## Autor
-Este proyecto ha sido desarrollado por [Lorenzo Guerrero](https://www.linkedin.com/feed/) con fines educativos.
+Este proyecto ha sido desarrollado por [Lorenzo Guerrero](https://www.linkedin.com/feed/).
